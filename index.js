@@ -12,7 +12,6 @@ AWS.config.update({
 });
 
 var ddbClient = new AWS.DynamoDB.DocumentClient()
-var client = daxClient != null ? daxClient : ddbClient;
 var tableName = "msiversioningtest";
 
             var params = {
