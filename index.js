@@ -27,7 +27,7 @@ app.get('/fetchversion', function (req, res) {
                 if (err) {
                      res.json(JSON.stringify(err, null, 2));
                 } else {
-                    res.end(data);
+                    res.json(data);
                 }
             });
 })
