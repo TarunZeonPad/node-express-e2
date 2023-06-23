@@ -32,6 +32,10 @@ app.get('/fetchversion', function (req, res) {
             });
 })
 
+app.get('/testingdata', function (req, res) {
+  res.json("Hello there testing.")
+})
+
 var server = app.listen(5001, function () {
    
    console.log("app is running on 5001")
